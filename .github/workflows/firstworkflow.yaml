@@ -28,8 +28,8 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
-	with:
-	 ref:develop
+        with:
+          ref: develop
 
       - name: Show directory
         run: 'pwd'
