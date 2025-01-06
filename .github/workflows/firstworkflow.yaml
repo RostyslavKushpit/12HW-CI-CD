@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - main
+      - develop
 
   pull_request:
     types:
@@ -27,6 +27,8 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
+	with:
+	 ref: develop
 
       - name: Show directory
         run: 'pwd'
